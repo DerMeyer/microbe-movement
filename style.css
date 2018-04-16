@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(14, 29, 100);
+}
+
+#data {
+    position: fixed;
+    left: 1vw;
+    color: white;
+}
+
+#data input {
+    font-size: 2.5vh;
+    height: 4vh;
+    width: 4vw;
+    margin: 2vh;
+}
+
+#sea {
+    display: grid;
+    grid-template: repeat(70, 1fr) / repeat(100, 1fr);
+    height: 100vh;
+    width: 100vw;
+}
+
+.hot, .cold {
+    height: (10/7)vh;
+    width: 1vw;
+}
+.hot {
+    background-color: rgb(14, 29, 200);
+}
+.cold {
+    background-color: rgb(14, 29, 100);
+}
+
+/* .water {
+    height: (10/7)vh;
+    width: 1vw;
+    background-color: rgb(14, 29, 129);
+} */
+
+#cell_1 {
+    filter: brightness(1.5);
+}
+
+.cell {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-image: url("cell.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(194, 199, 230);
+}
+
+/* rgb(14, 29, 200);
+rgb(14, 29, 100); */
